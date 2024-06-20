@@ -41,9 +41,8 @@ int main() {
   const char* str_two = "wor";
   const char* str_three = "banana";
 
- 
-  std::cout << "You string:\nstr_one: " << str_one 
-            << "\nstr_two: " << str_two << "\nstr_three: " << str_three << "\n";
+  std::cout << "You string:\nstr_one: " << str_one << "\nstr_two: " << str_two
+            << "\nstr_three: " << str_three << "\n";
 
   std::cout << "Is the string \"str_two\" a substring of string \"str_one\"? "
             << (substr(str_one, str_two) ? "yes\n" : "no\n");
@@ -52,18 +51,20 @@ int main() {
 
   // Второй вариант
   std::cout << "\n====================================\n";
-  std::cout << "Second option\n";
+  std::cout << "\t   Second option\n";
   std::cout << "====================================\n\n";
 
   char text_one[] = "Hello world";
   char text_two[] = "wor";
   char text_thee[] = "banana";
 
-  std::cout << "You string:\ntext_one: " << text_one 
-            << "\ntext_two: " << text_two << "\ntext_three: " << text_thee << "\n";
+  std::cout << "You string:\ntext_one: " << text_one
+            << "\ntext_two: " << text_two << "\ntext_three: " << text_thee
+            << "\n";
 
   std::cout << "Is the string \"text_two\" a substring of string \"text_one\"? "
             << (substr_v2(text_one, text_two) ? "yes\n" : "no\n");
-  std::cout << "Is the string \"text_three\" a substring of string \"text_one\"? "
-            << (substr_v2(text_one, text_thee) ? "yes\n" : "no\n");
+  std::cout
+      << "Is the string \"text_three\" a substring of string \"text_one\"? "
+      << (substr_v2(text_one, text_thee) ? "yes\n" : "no\n");
 }
