@@ -11,9 +11,9 @@ int main() {
   int a = 1;
   int b = 99;
   
-  std::cout << "Befor exchange: a = " << a << " b = " << b << "\n";
+  std::cout << "Befor swap: a = " << a << " b = " << b << "\n";
 
   exchange(&a, &b);
   
-  std::cout << "After exchange: a = " << a << " b = " << b << "\n";
+  std::cout << "After swap: a = " << a << " b = " << b << "\n";
 }
